@@ -37,6 +37,7 @@ displayteam2() {
         </div>
     </nav>
     <div class="container-fluid">
+        <form action="edit.html">
         <div class="row">
             <h1 class="text-center">New Game</h1>
         </div>
@@ -44,21 +45,25 @@ displayteam2() {
         <div class="row">
             <div class="text-center col-md-6">
                 Select Team 1:
-                <form>
                     <select name="team1">
                         <?php displayTeam1() ?>
+                        <option value="test1">test1</option>
                     </select>
-                </form>
                         
             </div>
             <div class="text-center col-md-6">
                 Select Team 2:
-                <form>
                     <select name="team2">
                         <?php displayTeam2() ?>
                     </select>
-                </form>
             </div> 
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="center-block" >Start Game</button>
+            </div>
+        </div>
+        </form>
     </div>
 
 
