@@ -4,20 +4,16 @@
     session_start();
     
     function avgPrice() {
-        $sql = "SELECT price FROM cars";
-        $records = getDataBySQL($sql);
-        $avg = 0;
-        $counter=0;
-        foreach($records as $record) {
-            $avg+=$record['price'];
-            $counter++;
+        $sql = "SELECT * FROM IM_teams";
+        $teams = getDataBySQL($sql);
+       
+        foreach($teams as $team) {
+            echo $team['teamName'];
         }
-        
-        setlocale(LC_MONETARY, 'en_US');
-        $avg = money_format('%i', round($avg/$counter));
-        
-        echo '<strong>Average Price:</strong> $' . $avg;
-    }
+        }
+    
+    
+   
     function maxPrice() {
         $sql = "SELECT * from cars";
         $records = getDataBySQL($sql);
@@ -102,12 +98,5 @@
 
     <div>
         <?=avgPrice();?>
-            </br>
-        <?=maxPrice();?>
-            </br>
-        <?=minPrice();?>
-            </br>
-        <?=total();?>
-            </br>
-        <?=totalPrice();?>
+
     </div>
