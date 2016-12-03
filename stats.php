@@ -3,6 +3,43 @@
     $connection = getDatabaseConnection();
     session_start();
     
+    function listGames() {
+        $sql = "SELECT * from IM_games";
+        $players = getDataBySQL($sql);
+        $max = $records[0]['price'];
+        $maxID = $records[0]['carID'];
+        $maxIndex = 0;
+        foreach($players as $player) {
+            echo $player['name'];
+        }
+        
+    }
+    
+    function maxPrice() {
+        $sql = "SELECT * from cars";
+        $records = getDataBySQL($sql);
+        $max = $records[0]['price'];
+        $maxID = $records[0]['carID'];
+        $maxIndex = 0;
+        foreach($records as $record) {
+            if ($record['price'] > $max) {
+                $max = $record['price'];
+                $maxID = $record['carID'];
+                $maxIndex = $i;
+            }
+
+            $i++;
+        }
+        
+        echo '<strong>Highest priced car: </strong></ br>';
+        
+        echo $records[$maxIndex]['year'] . ' ';
+        echo $records[$maxIndex]['make'] . ' ';
+        echo $records[$maxIndex]['model'] . ' - ';
+        echo '$' . money_format('%i', $records[$maxIndex]['price']);
+        
+    }
+    
     function avgPrice() {
         $sql = "SELECT price FROM cars";
         $records = getDataBySQL($sql);

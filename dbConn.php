@@ -1,6 +1,6 @@
 <?php
 function getDatabaseConnection(){
-    $servername = getenv('IP');
+    $servername = "localhost";
     $dbPort = 3306;
     
     // Which database (the name of the database in phpMyAdmin)?
