@@ -1,0 +1,68 @@
+<?php
+
+displayTeam1() {
+
+
+}
+displayteam2() {
+
+
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="IM Stats Keeper">
+        <meta name="author" content="Bilal, Alex, Ryan">
+        <title>Stats</title>
+        
+        <!-- Font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!--Navbar-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">CSUMB IM Stats Keeper</div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="text-center">New Game</h1>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="text-center col-md-6">
+                Select Team 1:
+                <form>
+                    <select name="team1">
+                        <?php displayTeam1() ?>
+                    </select>
+                </form>
+                        
+            </div>
+            <div class="text-center col-md-6">
+                Select Team 2:
+                <form>
+                    <select name="team2">
+                        <?php displayTeam2() ?>
+                    </select>
+                </form>
+            </div> 
+    </div>
+
+
+
+
+    </body>
+</html>
