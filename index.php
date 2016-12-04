@@ -15,6 +15,11 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
+
+        <!--Tooltip-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     
     <body>
@@ -22,7 +27,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <div class="navbar-brand"><img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB IM Stats Keeper</div>
+                <div class="navbar-brand"><img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB Stats Keeper</div>
             </div>
         </div>
     </nav>
@@ -30,7 +35,7 @@
         <div class="row">
             <img class ="center-block" src="assets/otterbasketball.png" height ="85">
             <h1 class="text-center">
-            CSUMB INTRAMURAL BASKETBALL STATS KEEPER</h1>
+            CSUMB BASKETBALL STATS KEEPER</h1>
         </div>
         <hr>
         <div class="row">
@@ -41,4 +46,12 @@
             </div>
         </div>
     </div>
+
+    <div class="footer" align="center" >
+        <a href="#" data-toggle="tooltip" title="A basketball stat tracker that will take track of any basketball game.">Help</a>
+    </div>
+    <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();});
+    </script>
 </body>
