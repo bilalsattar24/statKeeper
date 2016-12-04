@@ -2,7 +2,7 @@
     include 'dbConn.php';
     $connection = getDatabaseConnection();
     function displayTeam1() {
-        $sql = "Select teamName from IM_teams";
+        $sql = "Select * from IM_teams";
         $records = getDataBySQL($sql);
         foreach ($records as $record) {
             echo '<option value="' . $record[teamName] . ' ">' . $record[teamName] . '</option> ';
@@ -11,7 +11,7 @@
     }
 
     function displayTeam2() {
-        $sql = "Select teamName from IM_teams";
+        $sql = "Select * from IM_teams";
         $records = getDataBySQL($sql);
         foreach ($records as $record) {
             echo '<option value="' . $record[teamName] . ' ">' . $record[teamName] . '</option> ';
@@ -48,7 +48,7 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <form action="edit.html">
+        <form action="edit.php">
         <div class="row">
             <h1 class="text-center">New Game</h1>
         </div>
