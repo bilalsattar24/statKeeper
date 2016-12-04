@@ -58,7 +58,6 @@
                 Select Team 1:
                     <select name="team1">
                         <?php displayTeam1() ?>
-                        <option value="test1">test1</option>
                     </select>
                         
             </div>
@@ -66,7 +65,6 @@
                 Select Team 2:
                     <select name="team2">
                         <?php displayTeam2() ?>
-                        <option value ="test2">test2</option>
                     </select>
             </div> 
         </div>

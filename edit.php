@@ -100,7 +100,7 @@
 
                 <div class="navbar-brand">
                   <a class="black" href="index.php">
-                  <img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB IM Stats Keeper</a>
+                  <img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB Stats Keeper</a>
                 </div>
             </div>
         </div>
@@ -137,7 +137,7 @@
      <hr>
         <div class="row">
             <div class="col-md-12">
-                <a href="newgame.php"><button class="center-block">EndGame</button></a>
+                <a href="insertStats.php"><button class="center-block">EndGame</button></a>
             </div>
         </div>
 
