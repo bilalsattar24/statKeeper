@@ -87,10 +87,9 @@
             <div class="navbar-header">
 
                 <div class="navbar-brand">
-                  <a class="black" href="index.html">
+                  <a class="black" href="index.php">
                   <img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB IM Stats Keeper</a>
                 </div>
-                <div class="navbar-brand"><a class="black" href="index.html"><img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB IM Stats Keeper</a></div>
             </div>
         </div>
     </nav>
