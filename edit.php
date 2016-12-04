@@ -1,5 +1,4 @@
 <?php 
-echo 'select * from IM_teams natural join IM_players where teamName = "' . $_GET['team1'] . '"';
     include 'dbConn.php';
     $connection = getDatabaseConnection();
 
@@ -30,7 +29,30 @@ echo 'select * from IM_teams natural join IM_players where teamName = "' . $_GET
         }
     }
     function team2() {
-      
+        $sql = 'select * from IM_teams natural join IM_players where teamName = "' . $_GET['team2'] . '"';
+        $records = getDataBySQL($sql);
+
+        foreach($records as $record) {
+          echo '<tr>';
+          echo '<td>';
+          echo $record['name'];
+          echo '</td>';
+
+          echo '<td>0';
+          echo '</td>';
+
+          echo '<td>0';
+          echo '</td>';
+
+          echo '<td>0';
+          echo '</td>';
+
+          echo '<td>0';
+          echo '</td>';
+          
+          echo '</tr>';
+
+        }
     }
 
 
@@ -63,19 +85,12 @@ echo 'select * from IM_teams natural join IM_players where teamName = "' . $_GET
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-<<<<<<< HEAD
 
                 <div class="navbar-brand">
                   <a class="black" href="index.html">
                   <img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB IM Stats Keeper</a>
                 </div>
-
-
-                <div class="navbar-brand"><a class="black" href="index.html"><img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB Stats Keeper</a></div>
-
-=======
                 <div class="navbar-brand"><a class="black" href="index.html"><img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB IM Stats Keeper</a></div>
->>>>>>> 36fc5de8d93e55cc8e76fd2c967e40be15f7710a
             </div>
         </div>
     </nav>
@@ -96,7 +111,7 @@ echo 'select * from IM_teams natural join IM_players where teamName = "' . $_GET
       <?php team1() ?>
     </table>
     
-    <div><h3><?php echo $_GET['team1']?></h3></div>
+    <div><h3><?php echo $_GET['team2']?></h3></div>
     <table class="table">
       <tr>
         <th>Name</th>
