@@ -39,12 +39,16 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
+<<<<<<< HEAD
 
                 <div class="navbar-brand">
                   <a class="black" href="index.html">
                   <img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB IM Stats Keeper</a>
                 </div>
 
+=======
+                <div class="navbar-brand"><a class="black" href="index.html"><img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB Stats Keeper</a></div>
+>>>>>>> 12f4c7fbcbe8819e9dc0b1096199632cd70b1a21
             </div>
         </div>
     </nav>
