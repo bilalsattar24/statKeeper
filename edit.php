@@ -63,6 +63,7 @@ echo 'select * from IM_teams natural join IM_players where teamName = "' . $_GET
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
+<<<<<<< HEAD
 
                 <div class="navbar-brand">
                   <a class="black" href="index.html">
@@ -72,6 +73,9 @@ echo 'select * from IM_teams natural join IM_players where teamName = "' . $_GET
 
                 <div class="navbar-brand"><a class="black" href="index.html"><img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB Stats Keeper</a></div>
 
+=======
+                <div class="navbar-brand"><a class="black" href="index.html"><img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB IM Stats Keeper</a></div>
+>>>>>>> 36fc5de8d93e55cc8e76fd2c967e40be15f7710a
             </div>
         </div>
     </nav>
