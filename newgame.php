@@ -1,14 +1,23 @@
 <?php
+    include 'dbConn.php';
+    $connection = getDatabaseConnection();
+    function displayTeam1() {
+        $sql = "Select teamName from IM_teams";
+        $records = getDataBySQL($sql);
+        foreach ($records as $record) {
+            echo '<option value="' . $record[teamName] . ' ">' . $record[teamName] . '</option> ';
+        }
 
-displayTeam1() {
+    }
 
-
-}
-displayteam2() {
-
-
-}
-
+    function displayTeam2() {
+        $sql = "Select teamName from IM_teams";
+        $records = getDataBySQL($sql);
+        foreach ($records as $record) {
+            echo '<option value="' . $record[teamName] . ' ">' . $record[teamName] . '</option> ';
+        }
+    }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
