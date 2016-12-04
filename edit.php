@@ -1,11 +1,35 @@
 <?php 
+echo 'select * from IM_teams natural join IM_players where teamName = "' . $_GET['team1'] . '"';
     include 'dbConn.php';
     $connection = getDatabaseConnection();
 
-    function team1Name() {
-      
+    function team1() {
+        $sql = 'select * from IM_teams natural join IM_players where teamName = "' . $_GET['team1'] . '"';
+        $records = getDataBySQL($sql);
+
+        foreach($records as $record) {
+          echo '<tr>';
+          echo '<td>';
+          echo $record['name'];
+          echo '</td>';
+
+          echo '<td>0';
+          echo '</td>';
+
+          echo '<td>0';
+          echo '</td>';
+
+          echo '<td>0';
+          echo '</td>';
+
+          echo '<td>0';
+          echo '</td>';
+          
+          echo '</tr>';
+
+        }
     }
-    function team2Name() {
+    function team2() {
       
     }
 
@@ -39,16 +63,15 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-<<<<<<< HEAD
 
                 <div class="navbar-brand">
                   <a class="black" href="index.html">
                   <img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB IM Stats Keeper</a>
                 </div>
 
-=======
+
                 <div class="navbar-brand"><a class="black" href="index.html"><img class="otter-image" src="assets/otterbasketball.png" height="20">CSUMB Stats Keeper</a></div>
->>>>>>> 12f4c7fbcbe8819e9dc0b1096199632cd70b1a21
+
             </div>
         </div>
     </nav>
@@ -66,6 +89,7 @@
         <th>Assists</th>
         <th>Fouls</th>
       </tr>
+      <?php team1() ?>
     </table>
     
     <div><h3><?php echo $_GET['team1']?></h3></div>
@@ -77,7 +101,7 @@
         <th>Assists</th>
         <th>Fouls</th>
       </tr>
-      </tr>
+      <?php team2() ?>
     </table>
 
     </div>
