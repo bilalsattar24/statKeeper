@@ -41,8 +41,6 @@
         <div class="row">
             <div class="col-md-12">
                 <a href="newgame.php"><button class="center-block">Start New Game</button></a>
-                
-                
             </div>
         </div>
     </div>
