@@ -35,7 +35,7 @@
         <hr>
         <div class="row">
             <div class="col-md-12">
-                <a href="newgame.html"><button class="center-block">Start New Game</button></a>
+                <a href="newgame.php"><button class="center-block">Start New Game</button></a>
                 
                 
             </div>
